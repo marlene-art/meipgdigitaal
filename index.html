@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube do Pescador</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            color: #333;
+        }
+        header {
+            background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 5px black;
+        }
+        header h1 {
+            font-size: 40px;
+        }
+        nav {
+            background: #0d47a1;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ffeb3b;
+        }
+        .container {
+            padding: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .box {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .box:hover {
+            transform: scale(1.05);
+            background: #e3f2fd;
+        }
+        footer {
+            background: #0d47a1;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
 
+<header>
+    <h1>🎣 Clube do Pescador</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Técnicas</a>
+    <a href="#">Galeria</a>
+    <a href="#">Contato</a>
+</nav>
+
+<div class="container">
+    <h2>Bem-vindo!</h2>
+    <p>Explore o mundo da pesca com dicas incríveis e experiências únicas.</p>
+
+    <div class="grid">
+        <div class="box">
+            <h3>Pesca em Rio</h3>
+            <p>Dicas para capturar peixes em rios e correntezas.</p>
+        </div>
+
+        <div class="box">
+            <h3>Pesca em Mar</h3>
+            <p>Aprenda sobre equipamentos e técnicas marítimas.</p>
+        </div>
+
+        <div class="box">
+            <h3>Iscas Naturais</h3>
+            <p>Descubra as melhores iscas para cada tipo de peixe.</p>
+        </div>
+
+        <div class="box">
+            <h3>Equipamentos</h3>
+            <p>Veja o que você precisa para uma pesca perfeita.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Clube do Pescador</p>
+</footer>
+
+</body>
+</html>
